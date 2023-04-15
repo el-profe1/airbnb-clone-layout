@@ -7,14 +7,99 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <title>Hello, world!</title>
+    <style>
+        @media(min-width: 768px) {
+            section {
+                padding-top: 13.3125rem;
+            }
+
+            section {
+                padding-bottom: 7.5rem;
+            }
+        }
+    </style>    
   </head>
   <body>
     <h1>Hello, world!</h1>
     <!-- Added all the container-fluid divs -->
-    <div class="container-fluid container bg-primary display-1">
-        1st section
+
+    <div class="container-fluid" style="height:100vh">
+        <nav class="bg-primaryX text-lightX navbar navbar-expand-xl navbar-dark  navbar-togglable  fixed-top">
+
+            <div class="container">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="index.html">
+                    Airbnb
+                </a>
+
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapse -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                    <!-- Links -->
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item active mx-4">
+                        <a class="nav-link" href="#">Become a host</a>
+                      </li>
+                      <li class="nav-item mx-4">
+                        <a class="nav-link" href="#">Help</a>
+                      </li>
+                      <li class="nav-item mx-4">
+                        <a class="nav-link" href="#">Sign up</a>
+                      </li>
+                      <li class="nav-item mx-4">
+                        <a class="nav-link" href="#">Login</a>
+                      </li>                                                    
+                    </ul>
+
+                </div> <!-- / .navbar-collapse -->
+            </div> <!-- / .container -->
+        </nav>
+
+
+        <section class="section section-top section-full">
+
+            <!-- Cover -->
+            <div class="bg-cover" style="background-image: url(https://images.unsplash.com/photo-1542833278-f4deb3180291?ixlib=rb-1.2.1&auto=format&fit=crop&w=1487&q=80);
+                                         position: absolute;
+                                         top: 0;
+                                         bottom: 0;
+                                         left: 0;
+                                         right: 0;
+                                         background-repeat: no-repeat;
+                                         background-position: 50%;
+                                         background-size: cover; 
+                                         position: absolute;
+                                         top: 0;
+                                         bottom: 0;
+                                         left: 0;
+                                         right: 0;
+                                         background-repeat: no-repeat;
+                                         background-position: 50%;
+                                         background-size: cover;">
+          </div>
+            <!-- Overlay -->
+            <div class="bg-overlay"></div>
+
+            <!-- Triangles -->
+            <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left"></div>
+            <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>
+
+            <!-- Content -->
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-8 col-lg-7">
+                    </div>
+                </div> <!-- / .row -->
+            </div> <!-- / .container -->
+          
+        </section>
     </div>
     <div class="container-fluid container bg-secondary display-1">
         2nd section
